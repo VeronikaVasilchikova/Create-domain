@@ -283,8 +283,8 @@ form:after{
   border-top: none;
   transform: rotate(315deg);
   position: absolute;
-  top: 63%;
-  right: 4%;
+  top: 45%;
+  right: 3%;
 }
 .table-domain{
 	width: 100%;
@@ -1240,6 +1240,10 @@ footer{
 	.footer-bottom-center {
     	border-left-color: #2a2a2a;
 	}
+	.selector:after{
+		 top: 63%;
+		 right: 4%;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1316,5 +1320,35 @@ footer{
 	.dots {
     	left: 20%;
     	top: 70%;
+	}
+	input[type="text"] {
+    	width: 70%;
+	}
+	.selector {
+    	width: 15%;
+	}
+	form:after {
+	    right: 15%;
+	    top: 5%;
+	}
+	.selector:after{
+		 top: 63%;
+		 right: 7%;
+	}
+	img[src="pictures/basic_package.png"] {
+	    left: 42%;
+	}
+	img[src="pictures/normal_package.png"] {
+	    left: 42%;
+	}
+	img[src="pictures/big_package.png"] {
+	    top: 0.2%;
+	    left: 42.5%;
+	    width: 18px;
+	}
+	img[src="pictures/biggest_package.png"] {
+	    top: 0.2%;
+	    left: 43.5%;
+	    width: 18px;
 	}
 }
