@@ -17,6 +17,7 @@ dots[0].onclick = function(e){
 	first.style.display = 'inline-block';
 	second.style.display = 'none';
 	third.style.display = 'none';
+	console.log(document.body.clientWidth);
 }
 dots[1].onclick = function(e){
 	
@@ -26,19 +27,22 @@ dots[1].onclick = function(e){
 	first.style.display = 'none';
 	second.style.display = 'inline-block';
 	third.style.display = 'none';
-	if(document.body.style.width <= 684 && document.body.style.width > 412){
-		polosa.style.left = -650 + 'px';
-	}
-	else if(document.body.style.width <= 412 && document.body.style.width > 320) {
-		polosa.style.left = -360 + 'px';
-	}
-	else if(document.body.style.width <= 320){
-		polosa.style.left = -300 + 'px';
-	}
-	else{
+
+	if(document.body.clientWidth > 684){
 		polosa.style.left = -724 + 'px';
 	}
+	else if(document.body.clientWidth <= 684 && document.body.clientWidth > 412){
+		polosa.style.left = -650 + 'px';
+	}
+	else if(document.body.clientWidth <= 412 && document.body.clientWidth > 320) {
+		polosa.style.left = -360 + 'px';
+	}
+	else if(document.body.clientWidth <= 320){
+		polosa.style.left = -300 + 'px';
+	}
+	console.log(document.body.clientWidth);
 }
+
 dots[2].onclick = function(e){
 	dots[2].style.backgroundColor = "white";
 	dots[0].style.backgroundColor = "transparent";
@@ -46,18 +50,19 @@ dots[2].onclick = function(e){
 	first.style.display = 'none';
 	second.style.display = 'none';
 	third.style.display = 'inline-block';
-	if(document.body.style.width <= 684 && document.body.style.width > 412){
-		polosa.style.left = -1300 + 'px';
-	}
-	else if(document.body.style.width <= 412 && document.body.style.width > 320) {
-		polosa.style.left = -740 + 'px';
-	}
-	else if(document.body.style.width <= 320){
-		polosa.style.left = -700 + 'px';
-	}
-	else{
+	if(document.body.clientWidth > 684){
 		polosa.style.left = -1448 + 'px';
 	}
+	else if(document.body.clientWidth <= 684 && document.body.clientWidth > 412){
+		polosa.style.left = -1300 + 'px';
+	}
+	else if(document.body.clientWidth <= 412 && document.body.clientWidth > 320) {
+		polosa.style.left = -740 + 'px';
+	}
+	else if(document.body.clientWidth <= 320){
+		polosa.style.left = -700 + 'px';
+	}
+	console.log(document.body.clientWidth);
 }
 
 //burger menu
